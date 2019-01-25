@@ -5,7 +5,8 @@ import magnifier from "../magnifier.svg";
 const SearchContainer = styled.div`
   display: flex;
   justify-content: center;
-  padding-top: 85px;
+  padding-top: 18vh;
+  padding-bottom: 1.5vh;
 `;
 
 const BookForm = styled.form`
@@ -31,10 +32,18 @@ const Input = styled.input`
 `;
 
 const Button = styled.button`
+  padding: 1.5vw;
   background: url(${magnifier}) no-repeat center;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
-  font-size: 20px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-color: #1f2833;
+
+  &:hover,
+  &:focus {
+    background-color: #1f2850;
+  }
 `;
 class Form extends Component {
   handleFormSubmit = e => {
