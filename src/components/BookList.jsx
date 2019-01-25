@@ -2,32 +2,32 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  border-radius: 3px;
   align-items: stretch;
+  border-radius: 3px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-left: 75px;
-  padding-right: 75px;
   margin-left: 150px;
   margin-right: 150px;
   margin-top: 40px;
+  padding-left: 75px;
+  padding-right: 75px;
 `;
 
 const BookContainer = styled.div`
   background: rgba(25, 25, 25, 0.75);
-  color: white;
   border: 2px solid #1f2833;
+  border-radius: 4px;
+  color: white;
   flex-basis: 15%;
   margin: 5px;
   padding: 10px;
-  border-radius: 4px;
 
   img {
-    padding-top: 25px;
+    padding-bottom: 5px;
     padding-left: 40px;
     padding-right: 40px;
-    padding-bottom: 5px;
+    padding-top: 25px;
   }
 `;
 
@@ -37,8 +37,8 @@ const Title = styled.div`
 `;
 
 const BookCover = styled.a`
-  opacity: 0.65;
   display: inline-block;
+  opacity: 0.65;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
