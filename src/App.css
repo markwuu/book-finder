@@ -1,3 +1,6 @@
 body {
-  background-image: url("../src/bookimage.jpg");
+  background-image: url("../src/bookhand.jpg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

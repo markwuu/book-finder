@@ -13,10 +13,6 @@ class App extends Component {
     };
   }
 
-  componentDidMount() {
-    this.getBooks();
-  }
-
   handleInput = e => {
     let value = e.target.value;
     this.setState({
@@ -36,6 +32,7 @@ class App extends Component {
           const { thumbnail } = book.volumeInfo.imageLinks;
           return { title, authors, infoLink, publisher, thumbnail };
         });
+        console.log(books);
         this.setState({
           books
         });
