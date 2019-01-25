@@ -16,12 +16,11 @@ const BookForm = styled.form`
 
 const Input = styled.input`
   border: 2px solid #ececec;
-  font-size: 10px;
-  padding: 10px;
+  border-bottom-left-radius: 3px;
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-  font-size: 35px;
+  font-size: 5vh;
+  padding: 10px;
   &::-webkit-input-placeholder {
     color: #ececec;
   }
@@ -32,13 +31,13 @@ const Input = styled.input`
 `;
 
 const Button = styled.button`
-  padding: 1.5vw;
   background: url(${magnifier}) no-repeat center;
+  background-color: #1f2833;
   border-bottom-left-radius: 0;
+  border-bottom-right-radius: 3px;
   border-top-left-radius: 0;
   border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-  background-color: #1f2833;
+  padding: 1.5vw;
 
   &:hover,
   &:focus {
