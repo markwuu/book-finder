@@ -1,10 +1,14 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is built using React, Google Books API, styled-components, and axios.
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm install`
+## `npm install styled-components`
+## `npm install axios`
+
+The app will run after entering `npm run`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
