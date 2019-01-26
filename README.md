@@ -1,12 +1,10 @@
 This project is built using React, Google Books API, styled-components, and axios.
 
-## Available Scripts
-
 In the project directory, you can run:
 
 ### `npm install`
-## `npm install styled-components`
-## `npm install axios`
+### `npm install styled-components`
+### `npm install axios`
 
 The app will run after entering `npm run`
 
