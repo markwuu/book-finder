@@ -1,9 +1,10 @@
 ## Book Finder
 This project is built using React, Google Books API, styled-components, and axios.
 
-In the project directory, you can run:
+Change to the project directory after forking and cloing the project.
 
-`npm install`
-`npm install styled-components axios`
+In the project directory, you can run: `npm install`
 
-The app will run after entering `npm run`
+Then, `npm install styled-components axios`
+
+The app will run on a local server after running `npm run`
