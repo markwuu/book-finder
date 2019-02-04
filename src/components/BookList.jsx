@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -70,35 +70,33 @@ const Publisher = styled.div`
   font-size: 0.75vw;
 `;
 
-class BookList extends Component {
-  render() {
-    return (
-      <Container>
-        {this.props.bookinfo.map((book, i) => {
-          return (
-            <BookContainer key={i} className={book.title + i}>
-              <Title>{book.title}</Title>
-              <BookCover href={book.infoLink}>
-                <img src={book.thumbnail} alt="" />
-              </BookCover>
-              <TextContainer>
-                <Author>
-                  {book.authors
-                    ? " Authored by " + book.authors
-                    : " No author found! "}
-                </Author>
-                <Publisher>
-                  {book.publisher
-                    ? " Publisher: " + book.publisher
-                    : " No publisher found! "}
-                </Publisher>
-              </TextContainer>
-            </BookContainer>
-          );
-        })}
-      </Container>
-    );
-  }
-}
+const BookList = props => {
+  return (
+    <Container>
+      {props.bookinfo.map((book, i) => {
+        return (
+          <BookContainer key={i} className={book.title + i}>
+            <Title>{book.title}</Title>
+            <BookCover href={book.infoLink}>
+              <img src={book.thumbnail} alt="" />
+            </BookCover>
+            <TextContainer>
+              <Author>
+                {book.authors
+                  ? " Authored by " + book.authors
+                  : " No author found! "}
+              </Author>
+              <Publisher>
+                {book.publisher
+                  ? [<span>Publisher: </span>, <span>{book.publisher}</span>]
+                  : "No publisher found!"}
+              </Publisher>
+            </TextContainer>
+          </BookContainer>
+        );
+      })}
+    </Container>
+  );
+};
 
 export default BookList;
