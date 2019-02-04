@@ -41,7 +41,6 @@ class App extends Component {
         console.log(err);
       });
   };
-
   render() {
     return (
       <div>

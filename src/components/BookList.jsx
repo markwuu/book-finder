@@ -89,8 +89,8 @@ class BookList extends Component {
                 </Author>
                 <Publisher>
                   {book.publisher
-                    ? " Publisher: " + book.publisher
-                    : " No publisher found! "}
+                    ? [<span>Publisher: </span>, <span>{book.publisher}</span>]
+                    : "No publisher found!"}
                 </Publisher>
               </TextContainer>
             </BookContainer>
