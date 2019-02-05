@@ -1,49 +1,8 @@
 import React, { Component } from "react";
-import styled from "styled-components";
-import magnifier from "../magnifier.svg";
+import Button from "./UI/SearchButton";
+import Input from "./UI/Input";
+import { SearchContainer, BookForm } from "./UI/FormContainer";
 
-const SearchContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  padding-top: 18vh;
-  padding-bottom: 1.5vh;
-`;
-
-const BookForm = styled.form`
-  display: flex;
-  justify-content: center;
-`;
-
-const Input = styled.input`
-  border: 2px solid #ececec;
-  border-bottom-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-  border-top-left-radius: 3px;
-  font-size: 5vh;
-  padding: 10px;
-  &::-webkit-input-placeholder {
-    color: #ececec;
-  }
-
-  @media (max-width: 700px) {
-    font-size: 14px;
-  }
-`;
-
-const Button = styled.button`
-  background: url(${magnifier}) no-repeat center;
-  background-color: #1f2833;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 3px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 3px;
-  padding: 1.5vw;
-
-  &:hover,
-  &:focus {
-    background-color: #1f2850;
-  }
-`;
 class Form extends Component {
   handleFormSubmit = e => {
     e.preventDefault();
