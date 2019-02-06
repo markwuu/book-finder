@@ -20,8 +20,7 @@ class App extends Component {
     });
   };
 
-  //get book data and sets it to state
-  getBooks = () => {
+  storeBookData = () => {
     axios({
       method: "get",
       url: "https://www.googleapis.com/books/v1/volumes?q=" + this.state.search
@@ -32,20 +31,22 @@ class App extends Component {
           const { thumbnail } = book.volumeInfo.imageLinks;
           return { title, authors, infoLink, publisher, thumbnail };
         });
-        console.log(books);
         this.setState({
           books
         });
       })
       .catch(err => {
-        console.log(err);
+        console.log("An error occurred!", err);
       });
   };
   render() {
     return (
       <div>
         <Nav />
-        <Form getBooks={this.getBooks} handleInput={this.handleInput} />
+        <Form
+          storeBookData={this.storeBookData}
+          handleInput={this.handleInput}
+        />
         <BookList bookinfo={this.state.books} />
       </div>
     );
