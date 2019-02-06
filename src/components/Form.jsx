@@ -6,7 +6,7 @@ import { SearchContainer, BookForm } from "./UI/FormContainer";
 class Form extends Component {
   handleFormSubmit = e => {
     e.preventDefault();
-    this.props.getBooks();
+    this.props.storeBookData();
   };
 
   render() {

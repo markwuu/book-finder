@@ -34,6 +34,7 @@ const Nav = () => {
         <a href="https://developers.google.com/books/">Google Books API</a>
         <a href="https://www.styled-components.com/">styled-components</a>
         <a href="https://github.com/axios/axios">axios</a>
+        <a href="https://www.neopets.com">Neopets</a>
       </NavBar>
     </React.Fragment>
   );
