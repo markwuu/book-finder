@@ -13,7 +13,7 @@ const Nav = () => {
   return (
     <React.Fragment>
       <NavBar>
-        {links.map(link => {
+        {links.map((link, i) => {
           return <a href={link.url}>{link.name}</a>;
         })}
       </NavBar>
