@@ -5,31 +5,37 @@ exports[`Nav rendering Nav component 1`] = `
   <styled.div>
     <a
       href="https://github.com/markwuu/book-finder"
+      key="0"
     >
       Github
     </a>
     <a
       href="https://reactjs.org/"
+      key="1"
     >
       React
     </a>
     <a
       href="https://heroku.com/"
+      key="2"
     >
       Heroku
     </a>
     <a
       href="https://developers.google.com/books/"
+      key="3"
     >
       Google Books API
     </a>
     <a
       href="https://www.styled-components.com/"
+      key="4"
     >
       styled-components
     </a>
     <a
       href="https://github.com/axios/axios"
+      key="5"
     >
       axios
     </a>
