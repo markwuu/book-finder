@@ -31,7 +31,9 @@ const Nav = () => {
     { url: "https://heroku.com/", name: "Heroku" },
     { url: "https://developers.google.com/books/", name: "Google Books API" },
     { url: "https://www.styled-components.com/", name: "styled-components" },
-    { url: "https://github.com/axios/axios", name: "axios" }
+    { url: "https://github.com/axios/axios", name: "axios" },
+    { url: "https://jestjs.io/", name: "Jest" },
+    { url: "https://github.com/airbnb/enzyme", name: "enzyme" }
   ];
   return (
     <React.Fragment>
