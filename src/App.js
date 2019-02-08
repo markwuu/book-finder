@@ -36,7 +36,7 @@ class App extends Component {
         });
       })
       .catch(err => {
-        console.log("An error occurred!", err);
+        console.log("An error occurred! Try a different book", err);
       });
   };
   render() {
