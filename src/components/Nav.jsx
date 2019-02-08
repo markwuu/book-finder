@@ -37,7 +37,11 @@ const Nav = () => {
     <React.Fragment>
       <NavBar>
         {links.map((link, i) => {
-          return <a href={link.url}>{link.name}</a>;
+          return (
+            <a key={i} href={link.url}>
+              {link.name}
+            </a>
+          );
         })}
       </NavBar>
     </React.Fragment>

@@ -27,7 +27,7 @@ const BookList = props => {
               </Author>
               <Publisher>
                 {book.publisher
-                  ? [<span>Publisher: </span>, <span>{book.publisher}</span>]
+                  ? [<span key={i}>Publisher: {book.publisher}</span>]
                   : "No publisher found!"}
               </Publisher>
             </TextContainer>
